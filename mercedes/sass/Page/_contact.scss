@@ -1,0 +1,12 @@
+.contact__content {
+    .contact__h2 {
+        @include styleText($fs-3 + 3, $fw-bold-1, $text-on-base-color);
+    }
+    @include styleHr($bg-color-hr);
+    .contact__text a {
+        @include styleText($fs-1 + 1, $fw-bold-0, $link-on-base-color);
+        &:hover {
+            color: $theme-primary;
+        }
+    }
+}

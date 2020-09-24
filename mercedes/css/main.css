@@ -1,0 +1,535 @@
+.intro .intro__items img {
+  width: 100%;
+}
+
+.showTime {
+  margin: 70px 0;
+}
+
+.showTime .nav-tabs {
+  border-bottom: none;
+}
+
+.showTime .nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.showTime .nav .active {
+  background-color: #141414;
+  border: #000;
+  color: #00adef;
+}
+
+.showTime .nav a {
+  white-space: nowrap;
+  text-overflow: clip;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  margin: 10px;
+  background-color: #141414;
+}
+
+.showTime .nav a:hover {
+  color: #00adef;
+  border-color: #000;
+  background-color: #141414;
+}
+
+.showTime .offset-0 {
+  padding: 5px;
+  position: relative;
+}
+
+.showTime .offset-0 .offset__content {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  padding: 16px 31px 16px 31px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 15;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35);
+          box-shadow: rgba(0, 0, 0, 0.35);
+}
+
+.showTime .offset-0 .offset__content:hover {
+  height: 160px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.showTime .offset-0 .offset__content .offset__text {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+}
+
+.showTime .offset-0 .offset__content .offset__text h5 {
+  border: 1px solid #000000;
+}
+
+.showTime .offset-0 .offset__content .offset__hover {
+  font-size: 15px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.showTime .offset-0 .offset__top {
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+.showTime .offset-0 .offset__top .offset__second {
+  position: absolute;
+  bottom: 0;
+  padding: 16px 31px 16px 31px;
+  border: 1px solid #141414;
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 15;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-overflow: ellipsis;
+}
+
+.showTime .offset-0 .offset__top .offset__second:hover {
+  height: 160px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.showTime .offset-0 .offset__top .offset__second .offset__text {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.showTime .offset-0 .offset__top .offset__second .offset__hover {
+  font-size: 15px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.showTime img {
+  width: 100%;
+  margin: 2px;
+}
+
+.die {
+  font-size: 15px;
+  font-weight: normal;
+  color: #ececec;
+}
+
+.die .die__content {
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.die .die__content span {
+  white-space: nowrap;
+  padding: 0 10px;
+}
+
+.stay__row {
+  font-size: 15px;
+  font-weight: normal;
+  color: #ececec;
+}
+
+.stay__content .input-group-append .input-group-text {
+  background-color: #333;
+  border: #999;
+}
+
+.stay__content .input-group-append .input-group-text a {
+  font-size: 13px;
+  font-weight: normal;
+  color: #999;
+}
+
+.stay__content .input-group-append .input-group-text a:hover {
+  color: #00adef;
+}
+
+.stay__content .stay__hover a {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ececec;
+}
+
+.stay__content .stay__hover a:hover {
+  color: #00adef;
+}
+
+.stay .brandhub-hr .brandhub-hr {
+  border: 0;
+  height: 1px;
+  margin: 30px -1px;
+  position: relative;
+}
+
+.stay .brandhub-hr .brandhub-hr::before {
+  background: #999;
+  content: "";
+  display: block;
+  height: 1px;
+  left: -30px;
+  position: absolute;
+  right: -30px;
+}
+
+.stay__icon span {
+  margin: 30px;
+  font-size: 20px;
+}
+
+.stay__icon span:hover {
+  color: #00adef;
+}
+
+.stay__title::before {
+  content: "";
+  height: 3px;
+  width: 3%;
+  display: block;
+  background-color: #fff;
+  margin: 20px 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #141414;
+  width: 95%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.header__contant {
+  position: fixed;
+  left: 0;
+  max-height: 100%;
+  top: 0;
+  height: 120px;
+  background: #141414;
+  z-index: 950;
+  -webkit-box-shadow: 0 3.75rem 3.75rem -3.75rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3.75rem 3.75rem -3.75rem rgba(0, 0, 0, 0.2);
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.45s ease 0s;
+  transition: -webkit-transform 0.45s ease 0s;
+  transition: transform 0.45s ease 0s;
+  transition: transform 0.45s ease 0s, -webkit-transform 0.45s ease 0s;
+  padding: 10px 0;
+}
+
+.header__contant .header__icon {
+  margin-right: 10%;
+}
+
+.header__contant .header__icon .header__info {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header__contant .header__icon .header__info:hover {
+  color: #0088c6;
+}
+
+.header__contant .header__icon .header__info i {
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  line-height: 22px;
+}
+
+.header__contant .header__icon .header__info i:hover {
+  color: #0088c6;
+}
+
+.header__contant .mercedesNavbar {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  position: relative;
+}
+
+.header__contant .mercedesNavbar .mercedes-benz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__contant .mercedesNavbar .mercedes-benz a {
+  white-space: nowrap;
+  color: white;
+  text-decoration: none;
+}
+
+.header__contant .mercedesNavbar .mercedes-benz .mercedesNavbar__logo {
+  height: 44px;
+  left: 260px;
+  position: absolute;
+  bottom: 43px;
+  width: 44px;
+}
+
+.header__contant .mercedesNavbar .mercedes-benz .mercedesNavbar__text {
+  height: 44px;
+  left: 380px;
+  position: absolute;
+  top: 15px;
+  width: 44px;
+}
+
+.header__contant .mercedesNavbar .navbar-nav {
+  margin-right: 9%;
+}
+
+.header__contant .mercedesNavbar .navbar-nav .nav-item .nav-link {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header__contant .mercedesNavbar .navbar-nav .nav-item .nav-link:hover {
+  color: #0088c6;
+}
+
+.search__from {
+  margin: 25px 0;
+}
+
+.search__from .form-control {
+  background-color: #ececec;
+  border-color: #ececec;
+}
+
+.search__from .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #ececec;
+}
+
+.search__from .form-control:focus + .input-group-append .input-group-text {
+  background-color: #ececec;
+  border-color: #ececec;
+  border-left-color: transparent;
+}
+
+.search__from .input-group-text {
+  background-color: #ececec;
+  border-color: #ececec;
+  border-left-color: transparent;
+}
+
+.wellcome__contant {
+  font-size: 15px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.wellcome__contant h2 {
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff;
+  white-space: nowrap;
+  text-overflow: clip;
+  border-top: 2px solid #fff;
+  width: 12%;
+  padding: 15px 0;
+}
+
+.wellcome__contant .wellcome__button button {
+  color: #fff;
+  border: 1px solid #00adef;
+  background-color: #00adef;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin: 15px 0;
+}
+
+.wellcome__contant .wellcome__button button:hover {
+  border: 1px solid #0088c6;
+  background-color: #0088c6;
+}
+
+.carousel__img {
+  width: 1680px;
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-item_caption {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  -webkit-transform: translate(-30%, -30%);
+          transform: translate(-30%, -30%);
+  -webkit-transform: translate(50);
+          transform: translate(50);
+}
+
+.carousel-item_caption .title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ececec;
+  text-overflow: 5px;
+}
+
+.carousel-item_caption .title::before {
+  content: "";
+  margin: 20px 0;
+  height: 2px;
+  width: 8%;
+  background-color: #fff;
+  display: block;
+}
+
+.carousel-item_caption .carousel__button button {
+  background-color: #333;
+  font-size: 16px;
+  font-weight: normal;
+  color: #ececec;
+}
+
+.carousel-item_caption .carousel__button button:hover {
+  background-color: #000;
+}
+
+.carousel-item_caption .carousel__text {
+  position: absolute;
+  margin-top: 260px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.intro__div {
+  position: relative;
+}
+
+.intro__items::after {
+  content: "";
+  display: table;
+  opacity: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.intro__items:hover::after {
+  height: 10px;
+  opacity: 1;
+  background-color: #0088c6;
+}
+
+.mercidecCarousel__items {
+  position: relative;
+}
+
+.mercidecCarousel__items .mercidecCarousel__li {
+  position: relative;
+  width: 100%;
+}
+
+.mercidecCarousel__items .mercidecCarousel__li .mercidecCarousel__img {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.mercidecCarousel__items .mercidecCarousel__li .mercidecCarousel__text {
+  opacity: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+
+.mercidecCarousel__items .mercidecCarousel__li .mercidecCarousel__text .mercidecCarousel__h1 {
+  color: #fff;
+  display: block;
+  font-size: 40px;
+  line-height: 44px;
+  margin-left: 0;
+  margin-top: 60px;
+  padding: 0;
+  width: 45%;
+}
+
+.contact__content .contact__h2 {
+  font-size: 27px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.contact__content .brandhub-hr {
+  border: 0;
+  height: 1px;
+  margin: 30px -1px;
+  position: relative;
+}
+
+.contact__content .brandhub-hr::before {
+  background: #333;
+  content: "";
+  display: block;
+  height: 1px;
+  left: -30px;
+  position: absolute;
+  right: -30px;
+}
+
+.contact__content .contact__text a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #999;
+}
+
+.contact__content .contact__text a:hover {
+  color: #00adef;
+}
+/*# sourceMappingURL=main.css.map */

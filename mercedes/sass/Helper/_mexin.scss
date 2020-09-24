@@ -1,0 +1,205 @@
+@mixin styleText($fs, $fw, $color) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
+}
+
+@mixin searchButton($bg-color, $boder) {
+  .form-control {
+    background-color: $bg-color;
+    border-color: $boder;
+    &:focus {
+      box-shadow: none;
+      border-color: $bg-color;
+      & + .input-group-append {
+        .input-group-text {
+          background-color: $bg-color;
+          border-color: $boder;
+          border-left-color: transparent;
+        }
+      }
+    }
+  }
+  .input-group-text {
+    background-color: $bg-color;
+    border-color: $boder;
+    border-left-color: transparent;
+  }
+}
+
+@mixin styleHr($bg-color) {
+  .brandhub-hr {
+    border: 0;
+    height: 1px;
+    margin: 30px -1px;
+    position: relative;
+    &::before {
+      background: $bg-color;
+      content: "";
+      display: block;
+      height: 1px;
+      left: -30px;
+      position: absolute;
+      right: -30px;
+    }
+  }
+}
+
+.intro {
+  .intro__items {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.showTime {
+  margin: 70px 0;
+  .nav-tabs {
+    border-bottom: none;
+  }
+  .nav {
+    justify-content: center;
+    .active {
+      background-color: $bg-on-base-color;
+      border: $base-color;
+      color: $theme-primary;
+    }
+    a {
+      white-space: nowrap;
+      text-overflow: clip;
+      @include styleText($fs-0, $fw-bold-1, $text-on-base-color);
+      margin: 10px;
+      background-color: $bg-on-base-color;
+      &:hover {
+        color: $theme-primary;
+        border-color: $base-color;
+        background-color: $bg-on-base-color;
+      }
+    }
+  }
+  .offset-0 {
+    padding: 5px;
+    position: relative;
+
+    .offset__content {
+      position: absolute;
+      bottom: 0;
+      height: 50px;
+      padding: 16px 31px 16px 31px;
+      border: 1px solid rgba(0, 0, 0, 0.35);
+      width: 100%;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.35);
+      z-index: 15;
+      transition: all 0.5s;
+      box-shadow: rgba(0, 0, 0, 0.35);
+
+      &:hover {
+        height: 160px;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      .offset__text {
+        @include styleText($fs-0, $fw-bold-1, $text-on-base-color);
+        width: 100%;
+      }
+      .offset__text h5 {
+        border: 1px solid #000000;
+      }
+      .offset__hover {
+        @include styleText($fs-0, $fw-normal, $text-on-base-color);
+      }
+    }
+    .offset__top {
+      position: relative;
+      text-overflow: ellipsis;
+      .offset__second {
+        position: absolute;
+        bottom: 0;
+        padding: 16px 31px 16px 31px;
+        border: 1px solid $bg-on-base-color;
+        width: 100%;
+        height: 80px;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.35);
+        z-index: 15;
+        transition: all 0.5s;
+        text-overflow: ellipsis;
+        &:hover {
+          height: 160px;
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+        .offset__text {
+          @include styleText($fs-0, $fw-bold-1, $text-on-base-color);
+        }
+        .offset__hover {
+          @include styleText($fs-0, $fw-normal, $text-on-base-color);
+        }
+      }
+    }
+  }
+  img {
+    width: 100%;
+    margin: 2px;
+  }
+}
+
+.die {
+  @include styleText($fs-0, $fw-normal, $gray-color);
+  .die__content {
+    line-height: 20px;
+    margin-bottom: 15px;
+    span {
+      white-space: nowrap;
+      padding: 0 10px;
+    }
+  }
+}
+
+.stay__row {
+  @include styleText($fs-0, $fw-normal, $gray-color);
+}
+
+.stay__content {
+  .input-group-append {
+    .input-group-text {
+      a {
+        @include styleText($fs-1, $fw-normal, $link-on-base-color);
+        &:hover {
+          color: $theme-primary;
+        }
+      }
+      background-color: $bg-color-hr;
+      border: $link-on-base-color;
+    }
+  }
+  .stay__hover a {
+    @include styleText($fs-0, $fw-bold-1, $gray-color);
+    &:hover {
+      color: $theme-primary;
+    }
+  }
+}
+
+.stay {
+  .brandhub-hr {
+    @include styleHr($link-on-base-color);
+  }
+}
+
+.stay__icon span {
+  margin: 30px;
+  font-size: 20px;
+  &:hover {
+    color: $theme-primary;
+  }
+}
+
+.stay__title::before {
+  content: "";
+  height: 3px;
+  width: 3%;
+  display: block;
+  background-color: $text-on-base-color;
+  margin: 20px 0;
+}
